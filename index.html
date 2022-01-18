@@ -114,14 +114,13 @@
       }
     }
 
-    .iconBox ion-icon {
+    .powerButton {
       color: #555555;
-      font-size: 2em;
-      --ionicon-stroke-width: 50px;
+      max-height: 60%;
       transition: color 0.3s;
     }
 
-    label input:checked~.icon .iconBox ion-icon {
+    label input:checked~.icon .powerButton {
       color: #00ffe2;
       filter: drop-shadow(0 0 5px #00ffe2) drop-shadow(0 0 15px #00ffe2);
     }
@@ -134,13 +133,10 @@
     <span class="icon">
       <span class="shadow"></span>
       <span class="iconBox">
-        <ion-icon name="power-outline"></ion-icon>
+        <svg class="powerButton" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Power</title><path d="M378 108a191.41 191.41 0 0170 148c0 106-86 192-192 192S64 362 64 256a192 192 0 0169-148M256 64v192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/></svg>
       </span>
     </span>
   </label>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
